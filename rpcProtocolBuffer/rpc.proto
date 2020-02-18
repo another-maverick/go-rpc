@@ -1,0 +1,14 @@
+syntax = "proto3";
+package rocProtocolBuffer;
+
+service testRpc {
+    rpc TestRpc (rpcRequest) returns (rpcResponse) {}
+}
+
+message rpcRequest {
+    string name = 1;
+}
+
+message rpcResponse {
+    string response = 1;
+}
